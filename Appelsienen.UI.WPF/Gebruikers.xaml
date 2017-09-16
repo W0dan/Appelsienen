@@ -1,0 +1,28 @@
+﻿<Window x:Class="Appelsienen_MVP_WPF.Gebruikers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Gebruikers" Height="468" Width="792" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" MinHeight="30" />
+        </Grid.RowDefinitions>
+        <ScrollViewer>
+            <WrapPanel HorizontalAlignment="Left" Margin="0,0,0,0" Name="UsersWrapPanel" Width="Auto" MouseDown="UsersWrapPanel_MouseDown">
+                <WrapPanel.ContextMenu>
+                    <ContextMenu Name="GebruikersContextmenu">
+                        <MenuItem Name="verwijderenMenuItem" Header="Verwijderen" Click="verwijderenMenuItem_Click">
+                            <MenuItem.Icon>
+                                <Image Source="/Appelsienen_MVP_WPF;component/icons/Delete.ico" Height="16" Width="16"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </ContextMenu>
+                </WrapPanel.ContextMenu>
+            </WrapPanel>
+        </ScrollViewer>
+        <Button Grid.Row="2" Height="23" HorizontalAlignment="Left" Margin="20,0,0,0" Name="NieuweGebruikerMakenButton" VerticalAlignment="Center" Width="138" Click="NieuweGebruikerMakenButton_Click">Nieuwe gebruiker</Button>
+    </Grid>
+</Window>

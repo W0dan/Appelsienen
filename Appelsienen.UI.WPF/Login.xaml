@@ -1,0 +1,14 @@
+﻿<Window x:Class="Appelsienen_MVP_WPF.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Login" Height="363" Width="588" Loaded="Window_Loaded" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+    <Grid Height="auto">
+    <ListBox Name="UsersWrapPanel" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListBox.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapPanel HorizontalAlignment="Left" Margin="0" />
+            </ItemsPanelTemplate>
+        </ListBox.ItemsPanel>
+    </ListBox>
+    </Grid>
+</Window>

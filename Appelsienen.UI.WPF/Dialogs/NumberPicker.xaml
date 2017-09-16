@@ -1,0 +1,24 @@
+﻿<Window x:Class="Appelsienen_MVP_WPF.Dialogs.NumberPicker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appelsienen_MVP_WPF.Dialogs"
+        xmlns:controls="clr-namespace:Appelsienen_MVP_WPF.controls"
+        mc:Ignorable="d"
+        Title="NumberPicker" Height="480" Width="310" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="44"></RowDefinition>
+        </Grid.RowDefinitions>
+        <controls:Numpad Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" x:Name="Numpad1" Randomized="False" Multiselect="True"></controls:Numpad>
+        <Button Grid.Row="1" Grid.Column="1" Margin="10" Name="CancelButton" Click="CancelButton_OnClick">Cancel</Button>
+        <Button Grid.Row="1" Grid.Column="0" Margin="10" Name="OkButton" Click="OkButton_OnClick">Ok</Button>
+    </Grid>
+</Window>
+

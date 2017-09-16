@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55BBABB2-B254-4506-BB81-7A80566AEE43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Appelsienen_MVP_WPF</RootNamespace>
+    <AssemblyName>Appelsienen_MVP_WPF</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>Orange.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'x64|AnyCPU' ">
+    <OutputPath>bin\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'x86 configuration|AnyCPU' ">
+    <OutputPath>bin\x86 configuration\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'x64|x86' ">
+    <OutputPath>bin\x86\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'x86 configuration|x86' ">
+    <OutputPath>bin\x86\x86 configuration\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.1\lib\net35\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.1.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.1\lib\net35\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AdminWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="controls\Appelsienen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="controls\AppelsienenRandomizer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="controls\Cijfer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="controls\Numpad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="controls\ScorePanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CustomToolNamespace>icons\Default.ico</CustomToolNamespace>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CopyCat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CountOranges.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogs\NumberPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GebruikerDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Gebruikers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RecogniseNumbers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SelectUserImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\NumberPicker.xaml.cs">
+      <DependentUpon>NumberPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RecogniseNumbers.xaml.cs">
+      <DependentUpon>RecogniseNumbers.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminWindow.xaml.cs">
+      <DependentUpon>AdminWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Appelsienen.xaml.cs">
+      <DependentUpon>Appelsienen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\AppelsienenRandomizer.xaml.cs">
+      <DependentUpon>AppelsienenRandomizer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Cijfer.xaml.cs">
+      <DependentUpon>Cijfer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\Numpad.xaml.cs">
+      <DependentUpon>Numpad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ScorePanel.xaml.cs">
+      <DependentUpon>ScorePanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CopyCat.xaml.cs">
+      <DependentUpon>CopyCat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CountOranges.xaml.cs">
+      <DependentUpon>CountOranges.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GebruikerDetail.xaml.cs">
+      <DependentUpon>GebruikerDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gebruikers.xaml.cs">
+      <DependentUpon>Gebruikers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="graphics\GraphicsBase.cs" />
+    <Compile Include="graphics\ScoreChart.cs" />
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="resources\Resources.cs" />
+    <Compile Include="SelectUserImage.xaml.cs">
+      <DependentUpon>SelectUserImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBase.cs" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\Apply.png" />
+    <Resource Include="icons\buttonCalculator.ico" />
+    <Resource Include="icons\buttonNext.ico" />
+    <Resource Include="icons\buttonRefresh.ico" />
+    <Resource Include="icons\CheckDealie.ico" />
+    <Resource Include="icons\Cross.png" />
+    <Resource Include="icons\Default.ico" />
+    <Resource Include="icons\Delete.ico" />
+    <Resource Include="icons\icon-next.png" />
+    <Resource Include="icons\icon_start.png" />
+    <Resource Include="icons\Orange.ico" />
+    <Resource Include="icons\Pointless Bw Circle, I use it for iEx.ico" />
+    <Resource Include="icons\Question.png" />
+    <Resource Include="images\number1_0.png" />
+    <Resource Include="images\number1_1.png" />
+    <Resource Include="images\number1_10.png" />
+    <Resource Include="images\number1_2.png" />
+    <Resource Include="images\number1_3.png" />
+    <Resource Include="images\number1_4.png" />
+    <Resource Include="images\number1_5.png" />
+    <Resource Include="images\number1_6.png" />
+    <Resource Include="images\number1_7.png" />
+    <Resource Include="images\number1_8.png" />
+    <Resource Include="images\number1_9.png" />
+    <Resource Include="images\number3_0.png" />
+    <Resource Include="images\number3_1.png" />
+    <Resource Include="images\number3_10.png" />
+    <Resource Include="images\number3_2.png" />
+    <Resource Include="images\number3_3.png" />
+    <Resource Include="images\number3_4.png" />
+    <Resource Include="images\number3_5.png" />
+    <Resource Include="images\number3_6.png" />
+    <Resource Include="images\number3_7.png" />
+    <Resource Include="images\number3_8.png" />
+    <Resource Include="images\number3_9.png" />
+    <Resource Include="images\number2_8.png" />
+    <Resource Include="images\check2_8.png" />
+    <Resource Include="images\number2_5.png" />
+    <Resource Include="images\check2_5.png" />
+    <Resource Include="images\number2_4.png" />
+    <Resource Include="images\check2_4.png" />
+    <Resource Include="images\number2_9.png" />
+    <Resource Include="images\check2_9.png" />
+    <Resource Include="images\number2_1.png" />
+    <Resource Include="images\check2_1.png" />
+    <Resource Include="images\number2_7.png" />
+    <Resource Include="images\check2_7.png" />
+    <Resource Include="images\number2_6.png" />
+    <Resource Include="images\check2_6.png" />
+    <Resource Include="images\number2_10.png" />
+    <Resource Include="images\check2_10.png" />
+    <Resource Include="images\number2_3.png" />
+    <Resource Include="images\check2_3.png" />
+    <Resource Include="images\number2_2.png" />
+    <Resource Include="images\check2_2.png" />
+    <Resource Include="images\number2_0.png" />
+    <Resource Include="images\check2_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CL.Entity\CL.Entity.csproj">
+      <Project>{8CA91B6E-3889-47F4-A15C-E4253D03D2EF}</Project>
+      <Name>CL.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL.Logic\CL.Logic.csproj">
+      <Project>{38AB11F6-AC80-4817-BDC7-CB2AB7145AF2}</Project>
+      <Name>CL.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\Exit_door 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\void.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="userImages\user001.png" />
+    <Resource Include="userImages\user056.png" />
+    <Resource Include="userImages\user055.png" />
+    <Resource Include="userImages\user054.png" />
+    <Resource Include="userImages\user053.png" />
+    <Resource Include="userImages\user052.png" />
+    <Resource Include="userImages\user051.png" />
+    <Resource Include="userImages\user050.png" />
+    <Resource Include="userImages\user049.png" />
+    <Resource Include="userImages\user048.png" />
+    <Resource Include="userImages\user047.png" />
+    <Resource Include="userImages\user046.png" />
+    <Resource Include="userImages\user045.png" />
+    <Resource Include="userImages\user044.png" />
+    <Resource Include="userImages\user043.png" />
+    <Resource Include="userImages\user042.png" />
+    <Resource Include="userImages\user041.png" />
+    <Resource Include="userImages\user040.png" />
+    <Resource Include="userImages\user039.png" />
+    <Resource Include="userImages\user038.png" />
+    <Resource Include="userImages\user000.png" />
+    <Resource Include="userImages\user037.png" />
+    <Resource Include="userImages\user036.png" />
+    <Resource Include="userImages\user035.png" />
+    <Resource Include="userImages\user034.png" />
+    <Resource Include="userImages\user033.png" />
+    <Resource Include="userImages\user032.png" />
+    <Resource Include="userImages\user031.png" />
+    <Resource Include="userImages\user030.png" />
+    <Resource Include="userImages\user029.png" />
+    <Resource Include="userImages\user028.png" />
+    <Resource Include="userImages\user027.png" />
+    <Resource Include="userImages\user026.png" />
+    <Resource Include="userImages\user025.png" />
+    <Resource Include="userImages\user024.png" />
+    <Resource Include="userImages\user023.png" />
+    <Resource Include="userImages\user022.png" />
+    <Resource Include="userImages\user021.png" />
+    <Resource Include="userImages\user020.png" />
+    <Resource Include="userImages\user019.png" />
+    <Resource Include="userImages\user018.png" />
+    <Resource Include="userImages\user017.png" />
+    <Resource Include="userImages\user016.png" />
+    <Resource Include="userImages\user015.png" />
+    <Resource Include="userImages\user014.png" />
+    <Resource Include="userImages\user013.png" />
+    <Resource Include="userImages\user012.png" />
+    <Resource Include="userImages\user011.png" />
+    <Resource Include="userImages\user010.png" />
+    <Resource Include="userImages\user009.png" />
+    <Resource Include="userImages\user008.png" />
+    <Resource Include="userImages\user007.png" />
+    <Resource Include="userImages\user006.png" />
+    <Resource Include="userImages\user005.png" />
+    <Resource Include="userImages\user004.png" />
+    <Resource Include="userImages\user002.png" />
+    <Resource Include="userImages\user003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\user051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\oranges.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\oranges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\numbers.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\Administrator.png" />
+    <Resource Include="icons\Settings.png" />
+    <Resource Include="icons\Users128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
